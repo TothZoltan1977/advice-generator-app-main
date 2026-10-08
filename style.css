@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #202632;
+  font-family: 'Manrope', sans-serif;
+}
+
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}  
+
+
+.card{
+  position: relative;
+  background-color: #303948;
+  padding: 25px; 
+  border-radius: 1rem; 
+  text-align: center;
+  width: 100%;
+  max-width: 600px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.advice_text{
+    color:white;
+    padding: 25px;
+    font-size: 2rem;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.advice_number{
+    color: #53ffab;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+    font-weight: 500;
+    font-size: 12px;  
+    display: block;
+    margin-top: 20px;
+}
+
+.desktop_img{
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+.mobile_img{
+  display: none;
+  margin-bottom: 20px;
+}
+
+.card_button{
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #53ffab;
+  padding: 15px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+  transition: all 0.4s ease-in-out;
+}
+
+.card_button:hover{
+  box-shadow: 0px 0px 25px 10px rgba(83, 255, 171, 0.5); 
+}
+
+.card_button:focus-visible {
+  outline: 3px solid white;
+  outline-offset: 3px;
+}
+
+
+.card_button img {
+  width: 100%;
+  height: 100%;
+  
+}
+
+
+
+
+/*BOBIL*/
+
+  @media (max-width: 700px) {
+  .card{
+    max-width: 300px;
+  }
+
+  .desktop_img{
+    display: none;
+  }
+
+  .mobile_img{
+    display: block;
+    max-width: 250px;
+  }
+  
+  }
+
+  /*BOBIL*/
